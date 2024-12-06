@@ -59,7 +59,7 @@ class DistilledVisionTransformer(VisionTransformer):
             return (x + x_dist) / 2
 
 
-@register_model
+#@register_model
 def deit_tiny_patch16_224(pretrained=False, **kwargs):
     model = VisionTransformer(
         patch_size=16, embed_dim=192, depth=12, num_heads=3, mlp_ratio=4, qkv_bias=True,
@@ -74,7 +74,7 @@ def deit_tiny_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_small_patch16_224(pretrained=False, **kwargs):
     model = VisionTransformer(
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
@@ -89,7 +89,7 @@ def deit_small_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_base_patch16_224(pretrained=False, **kwargs):
     model = VisionTransformer(
         patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
@@ -104,7 +104,7 @@ def deit_base_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs):
     model = DistilledVisionTransformer(
         patch_size=16, embed_dim=192, depth=12, num_heads=3, mlp_ratio=4, qkv_bias=True,
@@ -119,7 +119,7 @@ def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_small_distilled_patch16_224(pretrained=False, **kwargs):
     model = DistilledVisionTransformer(
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
@@ -134,7 +134,7 @@ def deit_small_distilled_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_base_distilled_patch16_224(pretrained=False, **kwargs):
     model = DistilledVisionTransformer(
         patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
@@ -149,7 +149,7 @@ def deit_base_distilled_patch16_224(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_base_patch16_384(pretrained=False, **kwargs):
     model = VisionTransformer(
         img_size=384, patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
@@ -164,7 +164,7 @@ def deit_base_patch16_384(pretrained=False, **kwargs):
     return model
 
 
-@register_model
+#@register_model
 def deit_base_distilled_patch16_384(pretrained=False, **kwargs):
     model = DistilledVisionTransformer(
         img_size=384, patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
